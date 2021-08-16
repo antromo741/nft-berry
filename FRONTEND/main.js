@@ -1,6 +1,6 @@
-Moralis.initialize("YOUR_APP_ID");
+Moralis.initialize("7ToOkkAjguuza6UojksSJyIQKJRmsvbclquuZVY8");
 
-Moralis.serverURL = 'https://YOUR_MORALIS_SERVER:1337/server'
+Moralis.serverURL = 'https://fhoth0szl7lg.moralisweb3.com:2053/server'
 
 init = async () => {
     window.web3 = await Moralis.Web3.enale();
