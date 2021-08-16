@@ -7,6 +7,16 @@ init = async () => {
 
 }
 
+initUser = async () => {
+    if (await Moralis.User.current()) {
+        hideElement(userConnectButton);
+        showElement(userProfileButton);
+    }else{
+        showElement(userConnectButton);
+        hideElement(userProfileButton);
+    }
+}
+
 hideElement = (element) => element.style.display = 'none';
 showElement = (element) => element.style.display = 'block';
 
