@@ -6,8 +6,11 @@ init = async () => {
     window.web3 = await Moralis.Web3.enale();
 
 }
+
 hideElement = (element) => element.style.display = 'none';
 showElement = (element) => element.style.display = 'block';
 
+const userConnectButton = document.getElementById("btnConnect");
+const userProfileButton = document.getElementById("btnUserInfo");
 
 init();
